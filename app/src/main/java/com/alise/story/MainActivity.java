@@ -1,9 +1,11 @@
 package com.alise.story;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 
 
@@ -14,10 +16,9 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
     }
 
-    private void onClick() {
+    public void shoot(View v) {
         EditText nameInput, likeInput, dislikeInput;
 
         nameInput = (EditText) findViewById(R.id.nameInput);
@@ -31,8 +32,11 @@ public class MainActivity extends ActionBarActivity {
         nameDislike = dislikeInput.getText().toString();
 
         story = "Yo"+ nameText + "!" + "I like" + nameLike + "too. " + "But what is wrong with " + nameDislike + "? Lol!" ;
-        story = "changed!";
 
+        Intent myIntent;
+        myIntent = new Intent(MainActivity.this, StoryActivity.class);
+        myIntent.putExtra("storyName",story);
+        startActivity(myIntent);
 
     }
 
