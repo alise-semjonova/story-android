@@ -31,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
         nameDislike = dislikeInput.getText().toString();
 
         story = "Yo"+ nameText + "!" + "I like" + nameLike + "too. " + "But what is wrong with " + nameDislike + "? Lol!" ;
-
+        story = "changed!";
 
 
     }
