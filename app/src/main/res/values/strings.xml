@@ -6,7 +6,6 @@
     <string name="like_label">What do you like?</string>
     <string name="dislike_label">And what do you hate?</string>
     <string name="button_name">Shoot!</string>
-    <string name="button_name2">Got it</string>
     <string name="title_activity_story">StoryActivity</string>
 
     <string name="hello_world">Hello world!</string>
